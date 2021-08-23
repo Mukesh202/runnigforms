@@ -1,0 +1,88 @@
+<app-form></app-form>
+<<router-outlet></router-outlet>
+
+<!--        
+<form #userForm="ngForm"(ngSubmit)="onSubmit(userForm)" >
+  <input type="text" name="email" placeholder="email" ngModel > <br> <br>
+  <input type="password" name="password" placeholder="password" ngModel> <br><br>
+  <button type="submit" >Login</button>
+</form>  -->
+<!-- <form #simpleForm = "ngForm" (ngSubmit)="getuservalue(simpleForm.value)">
+<label for="username"> username </label> <br>
+<input type="text" name="usrname" placeholder="username" ngModel> <br> <br>
+<label for="password"> password </label> <br>
+<input type="text" name="password" placeholder="password" ngModel> <br> <br>
+<label for="adress"> adress </label> <br>
+<input type="text" name="atress" placeholder="adress" ngModel> <br> <br>
+<label for="email">email</label> <br>
+<input type="text" name="email" placeholder="email" ngModel> <br> <br>
+<button class="btn btn-lg btn-info" type="submit"> submitt </button> </form> -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+<form #demoForm="ngForm" (ngSubmit)="obtaindata(demoForm.value)" >
+<label for="first name">first name </label> <br> 
+<input type="text" name="first name" placeholder="first name" ngModel> <br> <br>
+<label for="last name">last name </label> <br> 
+<input type="text" name="last name" placeholder="last name" ngModel> <br> <br>
+<label for="password">password </label> <br> 
+<input type="password" name="password" placeholder="password" ngModel> <br> <br>
+<button class="btn btn-lg btn-warning" type="submit">submit</button> </form>    
+<br>  <br> </div>
+<div class="col-md-6">
+<form #onlyForm="ngForm" (ngSubmit)="collectvalue(onlyForm.value)">
+<label for="name"> name </label> <br>
+<input type="text" name="name" placeholder="name" ngModel> <br> <br>
+<label for="subject"> subject </label> <br>
+<input type="text" name="subject" placeholder="subject" ngModel> <br> <br>
+<label for="name"> area </label> <br>
+<input type="text" name="area" placeholder="area" ngModel> <br> <br>
+<button class="btn btn-lg btn-info">submit</button>
+</form> 
+</div>
+</div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-6">
+    
+  <form #demoForm="ngForm" (ngSubmit)="demodata(demoForm.value)">
+    <input type="text" name="company" id="company" ngModel> <br> <br>
+    <input type="text" name="policy" id="policy" ngModel> <br> <br>
+    <button type="submit"  class="btn btn-primary" > submit</button>
+  </form>
+</div>
+<div class="col-md-6">
+
+  <form #policyForm="ngForm" (ngSubmit)="policydata(policyForm.value)" >
+    <input type="text" name="policy" id="policy" ngModal >  <br> <br>
+    <input type="text" name="details" id="details" ngModal >  <br> <br>
+    <button type="submit" class="btn btn-primary" > sumbit</button>
+  </form>
+</div>
+</div>
+</div>
+<!-- <div class="container">
+  <form #myForm="ngForm">
+      <div class="form-group">
+        <label for="exampleInputfullname" class="form-label">Full Name </label>
+        <input type="email" name="name" class="form-control" id="exampleInputfullname" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputmobileno" class="form-label">mobile No.</label>
+        <input type="email" name="email" class="form-control" id="exampleInputmobileno" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label">Email adress</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1" class="form-label">password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+</div> -->
